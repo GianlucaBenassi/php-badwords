@@ -1,5 +1,5 @@
 <?php 
-
+    $text = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas possimus pariatur perferendis rerum ipsa, necessitatibus incidunt, qui dolores consequatur sit veritatis, odio quo aperiam tempora quis laudantium ex. Id, iusto.';
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +11,12 @@
     <title>badwords</title>
 </head>
 <body>
+
+    <h1>BadWords</h1>
     
+    <h2>Paragrafo non censurato:</h2>
+    <p><?php echo $text ?></p>
+    <span>Lunghezza paragrafo: <?php echo strlen($text) ?></span>
+
 </body>
 </html>
