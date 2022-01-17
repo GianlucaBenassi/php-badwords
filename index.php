@@ -21,6 +21,7 @@
 
     <h2>Paragrafo censurato:</h2>
     <p><?php echo $censuredText ?></p>
+    <span>Lunghezza paragrafo censurato: <?php echo strlen($censuredText) ?></span>
 
 </body>
 </html>
