@@ -1,5 +1,6 @@
 <?php 
     $text = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas possimus pariatur perferendis rerum ipsa, necessitatibus incidunt, qui dolores consequatur sit veritatis, odio quo aperiam tempora quis laudantium ex. Id, iusto.';
+    $censuredText = str_replace($_GET['word'], '***', $text);
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +17,10 @@
     
     <h2>Paragrafo non censurato:</h2>
     <p><?php echo $text ?></p>
-    <span>Lunghezza paragrafo: <?php echo strlen($text) ?></span>
+    <span>Lunghezza paragrafo: <?php echo strlen($text); ?></span>
+
+    <h2>Paragrafo censurato:</h2>
+    <p><?php echo $censuredText ?></p>
 
 </body>
 </html>
